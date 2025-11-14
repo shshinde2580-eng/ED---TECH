@@ -9,10 +9,11 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Default route → Notes homepage
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "Notes", "notes.html"));
+  res.sendFile(path.join(__dirname, "public", "notes.html"));
 });
 
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
