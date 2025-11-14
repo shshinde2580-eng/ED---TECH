@@ -4,15 +4,15 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-// Serve public folder
-app.use(express.static(path.join(__dirname, "public")));
+// ✅ Public folder serve करा
+app.use(express.static(path.join(__dirname, "Public")));
 
-// Default route → Notes homepage
+// ✅ Default route
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "Notes", "notes.html"));
+  res.sendFile(path.join(__dirname, "Public", "index.html"));
 });
 
-// Start the server
+// ✅ Server listen
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
