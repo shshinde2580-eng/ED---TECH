@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Notes - StudyHub</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f9fc; /* Soft bluish background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;    /* vertical scroll enable */
+overflow-x: hidden;  /* horizontal scroll hide */
+
+  }
+
+  /* ✅ Watermark Background + Fade Animation */
+  @keyframes fadeInLogo {
+    from { opacity: 0; transform: scale(1.1); }
+    to { opacity: 0.22; transform: scale(1); }
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: url('GPM/gpm.png') center center no-repeat;
+    background-size: 550px;
+    opacity: 0.22;
+    filter: blur(0.3px);
+    z-index: -1;
+    animation: fadeInLogo 2.5s ease-in-out;
+  }
+
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+  }
+
+  h2 {
+    color: #333;
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  a {
+    display: block;
+    margin: 12px auto;
+    padding: 14px;
+    width: 300px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    background: #43a047;
+    transform: scale(1.05);
+  }
+
+  .back-btn {
+    background: #1e3d58;
+  }
+
+  .back-btn:hover {
+    background: #2a567a;
+  }
+
+  footer {
+    text-align: center;
+    color: #555;
+    margin-top: 50px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<header>📘 IT Polytechnic — Notes</header>
+
+<h2>📚 Semester 1 Notes</h2>
+<a href="Sem1/LDC/index.html" target="_blank">LDC</a>
+<a href="Sem1/APPLIED_PHYSICS/index.html" target="_blank">Physics</a>
+
+<h2>📚 Semester 2 Notes</h2>
+<a href="Sem2/Communication skill/index.html" target="_blank">Communication Skill</a>
+<a href="Sem2/Ds/index.html" target="_blank">Data Structures</a>
+
+<h2>📚 Semester 3 Notes</h2>
+<a href="Sem3/DBMS/index.html" target="_blank">DBMS</a>
+<a href="Sem3/JAVA/index.html" target="_blank">JAVA</a>
+<a href="Sem3/SE/index.html" target="_blank">Software Engineering</a>
+<a href="Sem3/MED/index.html" target="_blank">Microcontroller</a>
+
+<h2>📚 Semester 4 Notes</h2>
+<a href="Sem4/OS/index.html" target="_blank">Operating System</a>
+<a href="Sem4/Python/index.html" target="_blank">Python</a>
+<a href="Sem4/Computer network/index.html" target="_blank">Computer Networks</a>
+
+<h2>📚 Semester 5 Notes</h2>
+<a href="Sem5/NIS/indix.html" target="_blank">Networking & Info Security</a>
+<a href="Sem5/Cloud Computing/index.html" target="_blank">Cloud Computing</a>
+<a href="Sem5/STQA/indix.html" target="_blank">Software Testing & QA</a>
+
+<br><br>
+<a class="back-btn" href="../index.html">⬅ Back to Home</a>
+
+<footer>© 2025 Government Polytechnic Mumbai | IT Department</footer>
+
+</body>
+</html>
