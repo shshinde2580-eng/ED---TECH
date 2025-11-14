@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semester 5 – Syllabus</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fc; /* softer color */
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ✅ Watermark Background Logo with fade animation */
+    @keyframes fadeInLogo {
+      from { opacity: 0; transform: scale(1.1); }
+      to { opacity: 0.22; transform: scale(1); }
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: url('GPM/gpm.png') center center no-repeat;
+      background-size: 550px; /* bigger logo */
+      opacity: 0.22; /* darker watermark */
+      filter: blur(0.3px);
+      z-index: -1;
+      animation: fadeInLogo 2.5s ease-in-out;
+    }
+
+    h2 {
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 70%;
+      margin: 30px auto;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background-color: #43a047;
+      transform: scale(1.06);
+    }
+
+    .back-btn {
+      background-color: #1e3d58;
+    }
+
+    .back-btn:hover {
+      background-color: #2a567a;
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      margin-top: 50px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Semester 5 – Syllabus</h2>
+
+  <div class="container">
+    <h3>Semester 5</h3>
+    <a href="Semester 5.pdf" class="btn" target="_blank">📄 View Syllabus</a>
+    <a href="../Syllabus.html" class="btn back-btn">⬅️ Back to Home</a>
+  </div>
+
+  <footer>© 2025 Government Polytechnic Mumbai | IT Department</footer>
+
+</body>
+</html>
