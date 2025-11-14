@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Semester 1 - Subjects</title>
+
+<style>
+    body {
+        font-family: Arial;
+        text-align: center;
+        background-color: #f8f9fa;
+        padding-top: 40px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* 🔥 Background GPM Logo Animation */
+    @keyframes fadeInLogo {
+        from { opacity: 0; transform: scale(1.1); }
+        to { opacity: 0.22; transform: scale(1); }
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: url('../GPM/gpm.png') center center no-repeat;
+        background-size: 480px;
+        opacity: 0.22;
+        filter: blur(0.3px);
+        z-index: -1;
+        animation: fadeInLogo 2.5s ease-in-out;
+    }
+
+    h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: block;
+        width: 250px;
+        margin: 15px auto;
+        padding: 15px;
+        background: #28a745;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #218838;
+        transform: scale(1.05);
+    }
+
+    .back-btn {
+        background: #007bff;
+    }
+
+    .back-btn:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+    }
+</style>
+
+</head>
+<body>
+
+    <h2>Semester 1 - Subjects</h2>
+
+    <a class="btn" href="LDC ut1.pdf" target="_blank">📘 LDC</a>
+    <a class="btn" href="Physics.pdf" target="_blank">📗 Physics</a>
+
+    <a class="btn back-btn" href="../index.html">⬅ Back</a>
+
+</body>
+</html>
