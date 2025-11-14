@@ -19,7 +19,7 @@ app.get("/notes", (req, res) => {
 
 // SYLLABUS route
 app.get("/syllabus", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "Syllabus", "syllabus.html"));
+  res.sendFile(path.join(__dirname, "public", "Syllabus", "Syllabus.html"));
 });
 
 // PAPERS route
@@ -31,3 +31,4 @@ app.get("/papers", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
