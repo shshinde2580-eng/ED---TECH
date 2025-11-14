@@ -2,17 +2,32 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 3000;
 
-// PUBLIC FOLDER serve करा
+// Serve public folder
 app.use(express.static(path.join(__dirname, "public")));
 
-// HOME PAGE – index.html
+// Default route – Home page
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// START SERVER
+// NOTES route
+app.get("/notes", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Notes", "notes.html"));
+});
+
+// SYLLABUS route
+app.get("/syllabus", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Syllabus", "syllabus.html"));
+});
+
+// PAPERS route
+app.get("/papers", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "papers", "papers.html"));
+});
+
+// Start server
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
