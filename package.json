@@ -1,0 +1,12 @@
+{
+  "name": "ed-tech",
+  "version": "1.0.0",
+  "description": "College Project Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
