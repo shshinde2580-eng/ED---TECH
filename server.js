@@ -24,11 +24,12 @@ app.get("/syllabus", (req, res) => {
 
 // PAPERS route
 app.get("/papers", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "papers", "papers.html"));
+  res.sendFile(path.join(__dirname, "public", "papers", "index.html"));
 });
 
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
